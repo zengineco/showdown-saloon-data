@@ -1,0 +1,60 @@
+name: Simulate Hands
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual trigger'
+        required: false
+        default: 'Manual sync'
+
+permissions:
+  contents: write
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    concurrency:
+      group: simulate-hands
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run hand simulation
+        run: node simulate.js
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet history.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No new hands to commit."
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            HANDS=$(node -e "const h=require('./history.json');console.log(h.meta.totalHands)")
+            echo "New hands simulated. Total: $HANDS"
+          fi
+
+      - name: Commit and push
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "ArchivistDealer[bot]"
+          git config user.email "archivist@showdown-saloon.internal"
+          git add history.json
+          HANDS=$(node -e "const h=require('./history.json');console.log(h.meta.totalHands)")
+          git commit -m "📜 Ledger update — Hand #${HANDS} recorded [automated]"
+          git pull --rebase=merges origin main
+          git push origin main
