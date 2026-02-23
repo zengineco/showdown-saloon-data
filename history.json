@@ -1,11 +1,11 @@
 {
   "meta": {
     "title": "Showdown Saloon — 18 Players · Two Tables · $2/$5",
-    "genesis": "2026-03-01T00:00:00.000Z",
+    "genesis": "2026-02-23T00:00:00.000Z",
     "blinds": "2/5",
     "maxBuyin": 400,
     "note": "Append-only ledger. Never reset. Art and science.",
-    "lastUpdated": "2026-03-01T00:00:00.000Z",
+    "lastUpdated": "2026-02-23T00:00:00.000Z",
     "lastHandIndex": -1,
     "totalHands": 0,
     "schema": "2.0"
