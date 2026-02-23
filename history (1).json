@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Showdown Saloon — 18 Players · Two Tables · $2/$5",
+    "genesis": "2026-03-01T00:00:00.000Z",
+    "blinds": "2/5",
+    "maxBuyin": 400,
+    "note": "Append-only ledger. Never reset. Art and science.",
+    "lastUpdated": "2026-03-01T00:00:00.000Z",
+    "lastHandIndex": -1,
+    "totalHands": 0,
+    "schema": "2.0"
+  },
+  "tables": [
+    {
+      "id": 0,
+      "name": "Table 1 — Featured",
+      "playerIds": [0,1,2,3,4,5,6,7,8],
+      "currentStacks": [400,400,400,400,400,400,400,400,400],
+      "recentHands": []
+    },
+    {
+      "id": 1,
+      "name": "Table 2 — Secondary",
+      "playerIds": [9,10,11,12,13,14,15,16,17],
+      "currentStacks": [400,400,400,400,400,400,400,400,400],
+      "recentHands": []
+    }
+  ],
+  "lifetimeStats": {
+    "handsDealt": 0,
+    "byPlayer": [
+      {"id":0, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":1, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":2, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":3, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":4, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":5, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":6, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":7, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":8, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":9, "wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":10,"wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":11,"wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":12,"wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":13,"wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":14,"wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":15,"wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":16,"wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0},
+      {"id":17,"wins":0,"potsWon":0,"showdowns":0,"showdownWins":0,"stackHigh":400,"stackLow":400,"rebuys":0,"rebuyChips":0}
+    ]
+  },
+  "allTimeHands": []
+}
