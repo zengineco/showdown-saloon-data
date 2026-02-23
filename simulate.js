@@ -12,7 +12,7 @@ const HISTORY_PATH      = path.join(__dirname, 'history.json');
 const HAND_INTERVAL_SEC = 32;
 const MAX_HANDS_PER_RUN = 2000;
 const KEEP_RECENT       = 200;
-const GENESIS_MS        = Date.UTC(2026, 2, 1, 0, 0, 0);
+const GENESIS_MS        = Date.UTC(2026, 1, 23, 0, 0, 0);
 const SB = 2, BB = 5;
 const MAX_BUYIN         = 400;
 const REBUY_THRESHOLD   = 40;
